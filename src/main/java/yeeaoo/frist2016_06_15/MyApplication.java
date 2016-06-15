@@ -8,11 +8,13 @@ import android.content.Context;
  */
 public class MyApplication extends Application{
     private static Context context;
+    private static String name;
 
     @Override
     public void onCreate() {
         super.onCreate();
         context = getApplicationContext();
+        name = "zhang";
     }
 
     public static Context getContext(){
